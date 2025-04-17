@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Grid -->
+  <defs>
+    <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#f0f0f0" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#smallGrid)"/>
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.2"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Recursive Build Integration System</text>
+  <text x="400" y="70" font-family="Arial" font-size="16" text-anchor="middle" font-style="italic">Multi-Language Compilation Flow</text>
+  
+  <!-- Rust Core -->
+  <rect x="310" y="120" width="180" height="100" rx="5" ry="5" fill="#F1EAFF" stroke="#7851A9" stroke-width="2"/>
+  <text x="400" y="145" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Rust Core</text>
+  <text x="400" y="170" font-family="Arial" font-size="14" text-anchor="middle">libshark_core.{so,dylib,dll}</text>
+  <text x="400" y="190" font-family="Arial" font-size="12" text-anchor="middle">cargo build --release</text>
+  <text x="400" y="210" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Memory-safe compute engine</text>
+  
+  <!-- Go Bridge --> 
+  <rect x="150" y="280" width="180" height="120" rx="5" ry="5" fill="#E6F3F8" stroke="#29B6F6" stroke-width="2"/>
+  <text x="240" y="305" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Go Bridge</text>
+  <text x="240" y="330" font-family="Arial" font-size="14" text-anchor="middle">libshark_bridge.{a,so}</text>
+  <text x="240" y="350" font-family="Arial" font-size="12" text-anchor="middle">go build -buildmode={c-archive,c-shared}</text>
+  <text x="240" y="370" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">FFI + JNI interfaces</text>
+  <text x="240" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">CGO linking & exports</text>
+  
+  <!-- Swift Integration -->
+  <rect x="50" y="460" width="180" height="100" rx="5" ry="5" fill="#FFF8E6" stroke="#FFA726" stroke-width="2"/>
+  <text x="140" y="485" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Swift iOS App</text>
+  <text x="140" y="510" font-family="Arial" font-size="14" text-anchor="middle">SharkTracker.app</text>
+  <text x="140" y="530" font-family="Arial" font-size="12" text-anchor="middle">xcodebuild -configuration Release</text>
+  <text x="140" y="550" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Perceptual interface layer</text>
+  
+  <!-- Java Integration -->
+  <rect x="470" y="280" width="180" height="120" rx="5" ry="5" fill="#E8F5E9" stroke="#66BB6A" stroke-width="2"/>
+  <text x="560" y="305" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Java Desktop</text>
+  <text x="560" y="330" font-family="Arial" font-size="14" text-anchor="middle">SharkTracker.jar</text>
+  <text x="560" y="350" font-family="Arial" font-size="12" text-anchor="middle">./gradlew assembleRelease</text>
+  <text x="560" y="370" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">JNI native binding</text>
+  <text x="560" y="390" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Desktop visualization</text>
+  
+  <!-- Build System -->
+  <rect x="330" y="460" width="180" height="100" rx="5" ry="5" fill="#FFEBEE" stroke="#EF5350" stroke-width="2"/>
+  <text x="420" y="485" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Build Orchestration</text>
+  <text x="420" y="510" font-family="Arial" font-size="14" text-anchor="middle">CMake + Ninja</text>
+  <text x="420" y="530" font-family="Arial" font-size="12" text-anchor="middle">Cross-platform integration</text>
+  <text x="420" y="550" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Dependency graph management</text>
+  
+  <!-- CI Pipeline -->
+  <rect x="570" y="460" width="180" height="100" rx="5" ry="5" fill="#E0F2F1" stroke="#26A69A" stroke-width="2"/>
+  <text x="660" y="485" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">CI Pipeline</text>
+  <text x="660" y="510" font-family="Arial" font-size="14" text-anchor="middle">GitHub Actions</text>
+  <text x="660" y="530" font-family="Arial" font-size="12" text-anchor="middle">Matrix testing strategy</text>
+  <text x="660" y="550" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">Cross-platform validation</text>
+  
+  <!-- Arrows - Core to Bridges -->
+  <path d="M 370 220 L 290 280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 430 220 L 510 280" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows - Go Bridge to Swift -->
+  <path d="M 240 400 L 140 460" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows - Go Bridge to Build System -->
+  <path d="M 280 400 L 350 460" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows - Java to Build System -->
+  <path d="M 510 400 L 450 460" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows - Build System to CI -->
+  <path d="M 510 510 L 570 510" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <rect x="50" y="40" width="15" height="15" fill="#F1EAFF" stroke="#7851A9" stroke-width="1"/>
+  <text x="75" y="53" font-family="Arial" font-size="12">Rust Components</text>
+  
+  <rect x="50" y="60" width="15" height="15" fill="#E6F3F8" stroke="#29B6F6" stroke-width="1"/>
+  <text x="75" y="73" font-family="Arial" font-size="12">Go Components</text>
+  
+  <rect x="200" y="40" width="15" height="15" fill="#FFF8E6" stroke="#FFA726" stroke-width="1"/>
+  <text x="225" y="53" font-family="Arial" font-size="12">Swift Components</text>
+  
+  <rect x="200" y="60" width="15" height="15" fill="#E8F5E9" stroke="#66BB6A" stroke-width="1"/>
+  <text x="225" y="73" font-family="Arial" font-size="12">Java Components</text>
+</svg>
