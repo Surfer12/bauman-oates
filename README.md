@@ -10,23 +10,26 @@ The Bauman-Oates project encompasses multiple initiatives, with a primary focus 
 - **Additional Documentation**: Various markdown files and diagrams providing context and planning details.
 
 ## Repository Structure
-- `/` - Root directory containing primary project files and documentation.
-- `.git` - Version control directory.
-- `.goose` - Configuration or data directory for Goose AI interactions.
+- `/docs` - Documentation files including project goals, timeline, and analysis documents
+- `/shark-tracker` - Files related to the shark tracking application
+- `/emergency-sos` - Implementation and architecture for the Emergency SOS system
+- `/therapeutic-model` - The therapeutic model YAML file and related documents
+- `/config` - Configuration files including git configuration and project setup
+- `.goose` - Configuration directory for Goose AI interactions
 
 ## Key Files
-- `shark-tracker-build-architecture.svg` - Architectural diagram for the shark tracker.
-- `shark-tracker-timeline.md` - Detailed timeline documentation for shark tracker development.
-- `swift-emergency-sos-implementation.swift` - Swift code for an emergency SOS feature on Apple Watch.
-- `watchkit-sos-architecture.svg` - Architectural diagram for the WatchKit SOS feature.
-- `## <yaml_therapeutic_model> v3.yaml` - YAML file for a therapeutic model.
-- `Projecttimeline.pdf` - A PDF outlining the project timeline (content not extractable).
+- `shark-tracker/shark-tracker-build-architecture.svg` - Architectural diagram for the shark tracker
+- `shark-tracker/shark-tracker-timeline.md` - Detailed timeline documentation for shark tracker development
+- `emergency-sos/swift-emergency-sos-implementation.swift` - Swift code for an emergency SOS feature on Apple Watch
+- `emergency-sos/watchkit-sos-architecture.svg` - Architectural diagram for the WatchKit SOS feature
+- `therapeutic-model/therapeutic_model_v3.yaml` - YAML file for a therapeutic model
+- `docs/Projecttimeline.pdf` - A PDF outlining the project timeline
 
 ## Getting Started
 To contribute or understand the project:
-1. Review the architectural diagrams for an overview of the systems.
-2. Read through the markdown files for detailed planning and timelines, especially `shark-tracker-timeline.md`.
-3. Examine the Swift code for implementation details on the SOS feature.
+1. Review the architectural diagrams in the respective directories for an overview of the systems.
+2. Read through the markdown files in the `docs` and `shark-tracker` directories for detailed planning and timelines.
+3. Examine the Swift code in the `emergency-sos` directory for implementation details on the SOS feature.
 
 ## Contact
 For more information, contact the project maintainers (details to be added).
